@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------
+05/28/2020
+--------------------------------------------------------------------------------
+- Users Teachers
+- Users Students
+(roles?)
+- They should have a name, age
+- Teachers should have what they teach
+- Admin role?
+- Under admin student should have grades, and GPA
+- Classes
+- Classes should have a name, teacher,
+- School Schedule
+- Student Schedule
+- Clubs
+- Clubs should have a name, sponsored teacher and students, description
+- Events
+- Events should have a name, start date, start time, description
+- Sports
+- Sports should have a name (teams), students and coach
