@@ -9,6 +9,7 @@ class CreateStudents < ActiveRecord::Migration[6.0]
       t.string :email
       t.text :about
       t.string :password_digest
+      t.belongs_to :teacher
       t.string :role, default: 'student'
 
       t.timestamps

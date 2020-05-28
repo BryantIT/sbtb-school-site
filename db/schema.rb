@@ -24,9 +24,11 @@ ActiveRecord::Schema.define(version: 2020_05_28_173812) do
     t.string "email"
     t.text "about"
     t.string "password_digest"
+    t.bigint "teacher_id"
     t.string "role", default: "student"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["teacher_id"], name: "index_students_on_teacher_id"
   end
 
   create_table "teachers", force: :cascade do |t|
