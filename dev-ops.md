@@ -3,6 +3,10 @@
 --------------------------------------------------------------------------------
 - Users Teachers
 - Users Students
+- Users Parents
+
+## Next
+- Users Principal
 (roles?)
 - They should have a name, age, image
 - Teachers should have what they teach
