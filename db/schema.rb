@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_28_173812) do
+ActiveRecord::Schema.define(version: 2020_05_28_175244) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "parents", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "middle_initial"
+    t.string "email"
+    t.text "about"
+    t.string "password_digest"
+    t.bigint "student_id"
+    t.string "role", default: "parent"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["student_id"], name: "index_parents_on_student_id"
+  end
 
   create_table "students", force: :cascade do |t|
     t.string "first_name"
