@@ -4,7 +4,7 @@
 - Users Teachers
 - Users Students
 (roles?)
-- They should have a name, age
+- They should have a name, age, image
 - Teachers should have what they teach
 - Admin role?
 - Under admin student should have grades, and GPA
