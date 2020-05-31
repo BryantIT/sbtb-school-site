@@ -8,6 +8,7 @@
 ## Next
 - Stop here and see what I need to set up bcrypt and json stuff, cors
 (roles?)
+- Validations for users
 - They should have a name, age, image
 - Teachers should have what they teach
 - Admin role?
