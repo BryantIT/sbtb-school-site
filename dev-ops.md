@@ -6,7 +6,6 @@
 - Users Parents
 
 ## Next
-- Users Principal
 - Stop here and see what I need to set up bcrypt and json stuff, cors
 (roles?)
 - They should have a name, age, image
