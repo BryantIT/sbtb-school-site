@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :principals
   resources :parents
   resources :students
   resources :teachers
