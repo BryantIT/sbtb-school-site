@@ -4,6 +4,14 @@
 - Users Teachers
 - Users Students
 - Users Parents
+- Users Principal
+
+--------------------------------------------------------------------------------
+06/02/2020
+--------------------------------------------------------------------------------
+
+
+
 
 ## Next
 - Stop here and see what I need to set up bcrypt and json stuff, cors
