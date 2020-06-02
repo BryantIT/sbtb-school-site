@@ -10,21 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_02_181848) do
+ActiveRecord::Schema.define(version: 2020_06_02_183152) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "klasses", force: :cascade do |t|
-    t.string "name"
-    t.integer "grade"
-    t.bigint "teachers_id"
-    t.bigint "students_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["students_id"], name: "index_klasses_on_students_id"
-    t.index ["teachers_id"], name: "index_klasses_on_teachers_id"
-  end
 
   create_table "parents", force: :cascade do |t|
     t.string "first_name"
@@ -78,6 +67,17 @@ ActiveRecord::Schema.define(version: 2020_06_02_181848) do
     t.string "role", default: "teacher"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "years", force: :cascade do |t|
+    t.string "name"
+    t.integer "grade"
+    t.bigint "teachers_id"
+    t.bigint "students_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["students_id"], name: "index_years_on_students_id"
+    t.index ["teachers_id"], name: "index_years_on_teachers_id"
   end
 
 end

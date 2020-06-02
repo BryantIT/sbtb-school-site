@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :klasses
+  resources :years
   namespace :api do
     namespace :v1 do
       resources :principals
