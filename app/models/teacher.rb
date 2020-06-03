@@ -3,4 +3,5 @@ class Teacher < ApplicationRecord
   has_many :years
   has_many :students, through: :years
   has_many :parents, through: :students
+  has_many :schedules
 end
