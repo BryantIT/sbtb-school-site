@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_02_183152) do
+ActiveRecord::Schema.define(version: 2020_06_03_134632) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2020_06_02_183152) do
     t.string "role", default: "principal"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "status"
   end
 
   create_table "students", force: :cascade do |t|
@@ -54,6 +55,8 @@ ActiveRecord::Schema.define(version: 2020_06_02_183152) do
     t.string "role", default: "student"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.date "enrolled"
+    t.string "status"
     t.index ["teacher_id"], name: "index_students_on_teacher_id"
   end
 
@@ -67,6 +70,8 @@ ActiveRecord::Schema.define(version: 2020_06_02_183152) do
     t.string "role", default: "teacher"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.date "enrolled"
+    t.string "status"
   end
 
   create_table "years", force: :cascade do |t|
