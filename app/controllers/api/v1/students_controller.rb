@@ -40,11 +40,11 @@ class Api::V1::StudentsController < ApplicationController
 
   private
 
-  def set_user
+  def set_student
     @student = Student.find(params[:id])
   end
 
-  def user_params
+  def student_params
     params.require(:student).permit(:first_name, :last_name, :middle_initial,
       :email, :age, :grade_level, :about, :password, :teacher_id, :role, :enrolled,
       :status, :parent_id)
