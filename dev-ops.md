@@ -17,9 +17,12 @@
 - bcrypt done
 - Serializers setup and started
 - Started Crud
+- Changed how users are set up
 
 
 ## Next
+- Generate user serializer
+- Add belongs to to year and schedule for users
 - Finish serializer for student and teacher
 - Add belongs to for teacher belongs to principal
 - Stop here and see what I need to set up bcrypt and json stuff, cors
