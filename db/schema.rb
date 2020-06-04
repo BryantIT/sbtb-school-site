@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_03_135316) do
+ActiveRecord::Schema.define(version: 2020_06_04_140818) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -71,6 +71,8 @@ ActiveRecord::Schema.define(version: 2020_06_03_135316) do
     t.datetime "updated_at", precision: 6, null: false
     t.date "enrolled"
     t.string "status"
+    t.bigint "parent_id"
+    t.index ["parent_id"], name: "index_students_on_parent_id"
     t.index ["teacher_id"], name: "index_students_on_teacher_id"
   end
 
