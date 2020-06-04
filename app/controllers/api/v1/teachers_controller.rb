@@ -4,7 +4,7 @@ class Api::V1::TeachersController < ApplicationController
   def index
     @teachers = Teacher.all
 
-    render json: @teachers
+    render json: TeacherSerializer.new(@teachers)
   end
 
   def show
