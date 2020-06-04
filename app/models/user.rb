@@ -1,17 +1,9 @@
 class User < ApplicationRecord
-  def principal?
-    self.role == "principal"
-  end
+  enum role: [:standard, :teacher, :admin]
 
-  def teacher?
-    self.role == "teacher"
-  end
-
-  def parent?
-    self.role == "parent"
-  end
-
-  def student?
-    self.role == "student"
+  after_initialize do
+    if self.new_record?
+      self.role ||= :standard
+    end
   end
 end
