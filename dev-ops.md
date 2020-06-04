@@ -14,10 +14,14 @@
 --------------------------------------------------------------------------------
 06/04/2020
 --------------------------------------------------------------------------------
-
+- bcrypt done
+- Serializers setup and started
+- Started Crud
 
 
 ## Next
+- Finish serializer for student and teacher
+- Add belongs to for teacher belongs to principal
 - Stop here and see what I need to set up bcrypt and json stuff, cors
 (roles?)
 - Validations for users
