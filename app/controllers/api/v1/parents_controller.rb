@@ -13,10 +13,10 @@ class Api::V1::ParentsController < ApplicationController
   end
 
   def create
-    @parent = Parent.new(student_params)
+    @parent = Parent.new(parent_params)
 
     if @parent.save
-      session[:student_id] = @parent.id
+      session[:parent_id] = @parent.id
       render json: ParentSerializer.new(@parent), status: :created
     else
       resp = {
@@ -46,6 +46,6 @@ class Api::V1::ParentsController < ApplicationController
 
   def parent_params
     params.require(:parent).permit(:first_name, :last_name, :middle_initial,
-      :email, :about, :password, :student_id)
+      :email, :about, :password, :student_id, :role)
   end
 end
