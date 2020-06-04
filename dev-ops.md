@@ -21,8 +21,10 @@
 
 
 ## Next
-- Generate user serializer
+- Some kind of join table so that users can belong to other Users
+- Add a roles table (or figure out a way to do roles)
 - Add belongs to to year and schedule for users
+- Generate user serializer
 - Finish serializer for student and teacher
 - Add belongs to for teacher belongs to principal
 - Stop here and see what I need to set up bcrypt and json stuff, cors
