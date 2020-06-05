@@ -22,7 +22,7 @@
 --------------------------------------------------------------------------------
 06/05/2020
 --------------------------------------------------------------------------------
-
+- setup Schedules and removed Years
 
 ## Next
 - Some kind of join table so that users can belong to other Users
