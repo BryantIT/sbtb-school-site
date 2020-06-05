@@ -19,6 +19,10 @@
 - Started Crud
 - Changed how users are set up
 
+--------------------------------------------------------------------------------
+06/05/2020
+--------------------------------------------------------------------------------
+
 
 ## Next
 - Some kind of join table so that users can belong to other Users
