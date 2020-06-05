@@ -26,14 +26,10 @@
 - setup Schedules and removed Years
 - added relationships join table
 - Some kind of join table so that users can belong to other Users
+- UUID for users
 
 ## Next
-- UUID for users
-- Add belongs to to year and schedule for users
-- Generate user serializer
-- Finish serializer for student and teacher
-- Add belongs to for teacher belongs to principal
-- Stop here and see what I need to set up bcrypt and json stuff, cors
+cors
 (roles?)
 - Validations for users
 - They should have a name, age, image
