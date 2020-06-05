@@ -18,15 +18,17 @@
 - Serializers setup and started
 - Started Crud
 - Changed how users are set up
+- Add a roles table (or figure out a way to do roles)
 
 --------------------------------------------------------------------------------
 06/05/2020
 --------------------------------------------------------------------------------
 - setup Schedules and removed Years
+- added relationships join table
+- Some kind of join table so that users can belong to other Users
 
 ## Next
-- Some kind of join table so that users can belong to other Users
-- Add a roles table (or figure out a way to do roles)
+- UUID for users
 - Add belongs to to year and schedule for users
 - Generate user serializer
 - Finish serializer for student and teacher
