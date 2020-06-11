@@ -28,9 +28,14 @@
 - Some kind of join table so that users can belong to other Users
 - UUID for users
 
+--------------------------------------------------------------------------------
+06/10/2020
+--------------------------------------------------------------------------------
+- Cors finished
+- Setup basic front end
+
 ## Next
-cors
-(roles?)
+- Need to fix main logo so that it doesn't say Harrison
 - Validations for users
 - They should have a name, age, image
 - Teachers should have what they teach
