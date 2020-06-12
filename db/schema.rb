@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_135331) do
 
   create_table "newsletters", force: :cascade do |t|
     t.string "title"
+    t.string "author"
     t.date "published"
     t.text "body"
     t.datetime "created_at", precision: 6, null: false
