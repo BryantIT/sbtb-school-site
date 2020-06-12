@@ -1,4 +1,5 @@
 class Api::V1::NewslettersController < ApplicationController
+  before_action :set_newsletter, only: [:show, :update, :destroy]
 
   def index
     @newsletters = Newsletter.all
