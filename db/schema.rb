@@ -20,8 +20,10 @@ ActiveRecord::Schema.define(version: 2020_06_12_143029) do
     t.datetime "date"
     t.text "body"
     t.string "link"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_events_on_user_id"
   end
 
   create_table "newsletters", force: :cascade do |t|
@@ -29,8 +31,10 @@ ActiveRecord::Schema.define(version: 2020_06_12_143029) do
     t.string "author"
     t.date "published"
     t.text "body"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_newsletters_on_user_id"
   end
 
   create_table "relationships", force: :cascade do |t|

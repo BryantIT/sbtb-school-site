@@ -4,7 +4,8 @@ class User < ApplicationRecord
 
   has_many :schedules
   has_many :relationships
-  
+  has_many :newsletters
+
   after_initialize do
     if self.new_record?
       self.role ||= :standard
