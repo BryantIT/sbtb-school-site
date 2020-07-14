@@ -45,6 +45,6 @@ class Api::V1::EventsController < ApplicationController
   end
 
   def event_params
-    params.require(:event).permit(:date, :body, :link)
+    params.require(:event).permit(:title, :end, :start, :allDay, :resource, :description)
   end
 end

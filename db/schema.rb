@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 2020_06_12_143029) do
     t.string "title"
     t.date "start"
     t.date "end"
-    t.boolean "allDay?"
-    t.string "resource?"
+    t.boolean "allDay"
+    t.string "resource"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
