@@ -17,10 +17,11 @@ ActiveRecord::Schema.define(version: 2020_06_12_143029) do
   enable_extension "uuid-ossp"
 
   create_table "events", force: :cascade do |t|
+    t.string "title"
     t.date "start"
     t.date "end"
-    t.string "eventClasses"
-    t.string "title"
+    t.boolean "allDay?"
+    t.string "resource?"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
