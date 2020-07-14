@@ -17,13 +17,13 @@ ActiveRecord::Schema.define(version: 2020_06_12_143029) do
   enable_extension "uuid-ossp"
 
   create_table "events", force: :cascade do |t|
-    t.datetime "date"
-    t.text "body"
-    t.string "link"
-    t.bigint "user_id"
+    t.date "start"
+    t.date "end"
+    t.string "eventClasses"
+    t.string "title"
+    t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_events_on_user_id"
   end
 
   create_table "newsletters", force: :cascade do |t|
